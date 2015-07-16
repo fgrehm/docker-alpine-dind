@@ -1,6 +1,8 @@
-# docker-alpine-dind
+# Docker in Docker with Alpine Linux
 
-Alpine Linux image with support for latest Docker in Docker (1.7.1 as of this writing)
+![alpine-version](https://img.shields.io/badge/gliderlabs%2Falpine-3.2-green.svg) ![docker-version](https://img.shields.io/badge/docker-1.7.1-green.svg)
+
+Docker in Docker Alpine Linux image with support for latest Docker release.
 
 
 ## Usage
