@@ -11,6 +11,6 @@ replace `jpetazzo/dind` with `fgrehm/alpine-dind`._
 
 ## Credits
 
-This is based on the alpine image available at https://github.com/jpetazzo/dind
+This is based on the alpine image available at https://github.com/jpetazzo/dind/tree/master/alpine
 and it also uses the [`wrapdocker` script](https://github.com/jpetazzo/dind/blob/master/wrapdocker)
 provided by it.
