@@ -1,4 +1,5 @@
 FROM gliderlabs/alpine:3.2
+MAINTAINER Fabio Rehm "fgrehm@gmail.com"
 
 # Kinda based on https://github.com/jpetazzo/dind/blob/master/alpine/Dockerfile
 
