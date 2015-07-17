@@ -5,10 +5,16 @@
 Docker in Docker Alpine Linux image with support for latest Docker release.
 
 
-## Usage
+## Quickstart
 
-_The same instructions from https://github.com/jpetazzo/dind apply here, just
-replace `jpetazzo/dind` with `fgrehm/alpine-dind`._
+```sh
+docker run -ti --rm \
+           -v /tmp/dind:/var/run \
+           --privileged  \
+           fgrehm/alpine-dind
+```
+
+_For more information on how to fine tune Docker settings please refer to https://github.com/jpetazzo/dind#quickstart._
 
 
 ## Credits
