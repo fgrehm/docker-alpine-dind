@@ -6,11 +6,9 @@ MAINTAINER Fabio Rehm "fgrehm@gmail.com"
 # Install Docker from Alpine repos along with its dependencies
 # and update to the latest version
 RUN apk-install docker bash \
-    && curl -sL https://get.docker.com/builds/Linux/x86_64/docker-1.7.1 > /usr/bin/docker \
-    && chmod +x /usr/bin/docker
-
-# Install the magic wrapper.
-RUN curl -sL https://github.com/jpetazzo/dind/raw/master/wrapdocker > /usr/local/bin/wrapdocker \
+    && curl -sL https://get.docker.com/builds/Linux/x86_64/docker-1.8.1 > /usr/bin/docker \
+    && chmod +x /usr/bin/docker \
+    && curl -sL https://github.com/jpetazzo/dind/raw/master/wrapdocker > /usr/local/bin/wrapdocker \
     && chmod +x /usr/local/bin/wrapdocker
 
 # Define additional metadata for our image.
