@@ -8,7 +8,7 @@ Docker in Docker Alpine Linux image with support for latest Docker release.
 ## Quickstart
 
 ```sh
-sudo docker run -d --rm \
+sudo docker run -d \
                 -v /tmp/dind:/var/run \
                 --privileged  \
                 fgrehm/alpine-dind
