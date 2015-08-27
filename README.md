@@ -8,17 +8,19 @@ Docker in Docker Alpine Linux image with support for latest Docker release.
 ## Quickstart
 
 ```sh
-docker run -ti --rm \
-           -v /tmp/dind:/var/run \
-           --privileged  \
-           fgrehm/alpine-dind
-```
+sudo docker run -d --rm \
+                -v /tmp/dind:/var/run \
+                --privileged  \
+                fgrehm/alpine-dind
 
-_For more information on how to fine tune Docker settings please refer to https://github.com/jpetazzo/dind#quickstart._
+DOCKER_HOST='unix:///tmp/dind/docker.sock' \
+sudo -E docker run -ti --rm busybox echo 'IT WORKS!'
+```
 
 
 ## Credits
 
-This is based on the alpine image available at https://github.com/jpetazzo/dind/tree/master/alpine
-and it also uses the [`wrapdocker` script](https://github.com/jpetazzo/dind/blob/master/wrapdocker)
-provided by it.
+This was originally based on the alpine image available at https://github.com/jpetazzo/dind/tree/master/alpine
+and it used to bundle the [`wrapdocker` script](https://github.com/jpetazzo/dind/blob/master/wrapdocker)
+provided by it. These days, it uses the [`hack/dind` script available on the Docker
+project](https://github.com/docker/docker/blob/master/hack/dind).
