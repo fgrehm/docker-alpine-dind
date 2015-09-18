@@ -4,6 +4,9 @@
 
 Docker in Docker Alpine Linux image with support for latest Docker release.
 
+## Deprecated
+
+Please use the official DinD image provided by the Docker team https://hub.docker.com/_/docker/
 
 ## Quickstart
 
